@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Highlighter",
+  "version": "1.0",
+
+  "description": "Allows users to highlight text on a webpage and save the page, along with the user's highlights.",
+  "homepage_url": "https://github.com/nyu-ossd-s19/text-highlighter-team-3",
+  "icons": {
+    "32": "icons/highlighter-32.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/highlighter-32.png",
+    "default_title": "Highlighter"
+  }
+
+}
+
