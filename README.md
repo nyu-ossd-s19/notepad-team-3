@@ -1,4 +1,3 @@
-# text-highlighter-team-3
+# notepad-team-3
 
-This extension allows users to highlight text on a webpage. The page will then be saved, and the highlights persisted even when the browser restarts.
-The saved pages can be accessed as a list and viewed or deleted later.
+This extension adds a notepad to the sidebar. You can make notes about the current web page, which will be saved on [synchronized storage](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage/sync), so that any notes will be saved for the next time you open the page. Since notes are saved in synchronized storage, they will be available in any instance of Firefox that a user is logged into (across devices!).
