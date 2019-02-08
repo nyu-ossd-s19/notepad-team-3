@@ -1,0 +1,45 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  /*box-sizing: border-box;*/
+}
+
+body {
+  height: 100%;
+  font-family: courier, monospace;
+  font-size: 14px;
+  background-color: #FFFCDB;
+  color: #555;
+}
+
+p {
+  margin: 1em 2em;
+}
+
+#content {
+  height: 100%;
+  margin: 2em 2em 0 2em;
+}
+
+#content[contenteditable=true] {
+  background-color: #FFFCDB;
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+/*
+.lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 495px;
+  margin-left: 5px;
+}
+*/
+
+
+
