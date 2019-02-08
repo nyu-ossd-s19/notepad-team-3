@@ -1,38 +1,32 @@
-
 {
 
   "manifest_version": 2,
-  "name": "Highlighter",
+  "name": "Notepad",
   "version": "1.0",
 
-  "description": "Allows users to highlight text on a webpage and save the page, along with the user's highlights.",
+  "description": "Allows users to take notes in a sidebar on a web page. Any notes will be saved and visible for the next time the page is visited.",
   "homepage_url": "https://github.com/nyu-ossd-s19/text-highlighter-team-3",
   "icons": {
-    "32": "icons/highlighter-32.png"
+    "48": "icons/note.svg"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["highlighter.js"]
-    }
-  ],
-
   "permissions": [
-    "activeTab",
-    "contextMenus",
     "storage",
     "tabs"
   ],
 
-  "background": {
-    "scripts": ["background.js"]
+  "sidebar_action": {
+    "default_panel": "note.html",
+    "default_icon": "icons/note.svg",
+    "default_title" : "Notepad"
   },
 
-  "browser_action": {
-    "default_icon": "icons/highlighter-32.png",
-    "default_title": "Highlighter",
-    "default_popup": "popup/highlighter.html"
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
   }
 
 }
