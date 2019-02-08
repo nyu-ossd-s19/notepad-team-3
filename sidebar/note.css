@@ -1,13 +1,31 @@
 html,
 body {
-  background-color: #FBFCE8;
-  width: 600px;
-  margin: 0 auto;
-  padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#content {
+    background-color: #fbfce8;
+    font-size: 14px;
+    font-family: courier, monospace;
+    padding: 0 !important;
+    border: none;
+    resize: none;
+    height: 100%;
+    width: 100%;
+}
+
+#content[contenteditable=true] {
+  transition: background-color .2s ease-in;
+}
+
+[contenteditable]:focus {
+  outline: 0px solid transparent;
 }
 
 /* Make it look pretty like an actual notepad */
 
+/*
 .list {
   color: #555;
   font-size: 14px;
@@ -33,6 +51,8 @@ body {
   -ms-transition:     all 0.2s;
   -o-transition:      all 0.2s;
 }
+
+*/ 
 
 .lines {
   border-left: 1px solid #ffaa9f;
