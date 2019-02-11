@@ -11,7 +11,7 @@
   },
 
   "description": "Allows users to take notes in a sidebar on a web page. Any notes will be saved and visible for the next time the page is visited.",
-  "homepage_url": "https://github.com/nyu-ossd-s19/text-highlighter-team-3",
+  "homepage_url": "https://github.com/nyu-ossd-s19/notepad-team-3",
 
   "permissions": ["storage","tabs"],
 
