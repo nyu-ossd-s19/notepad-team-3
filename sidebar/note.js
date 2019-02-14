@@ -3,6 +3,7 @@ const contentBox = document.querySelector("#content");
 
 window.addEventListener("mouseover", () => {
   contentBox.setAttribute("contenteditable", true);
+  text = getSelectedText();
 });
 
 window.addEventListener("mouseout", () => {
@@ -32,6 +33,14 @@ function getSelectedText() {
     text = document.selection.createRange().text;
   }
     return text;
+}
+
+function clearSelection() {
+  if (getSelectedText()) {
+    window.getSelection().removeAllRanges();
+  } else if (document.selection) {
+    document.selection.empty();
+  }
 }
 
 browser.tabs.onActivated.addListener(updateContent);
