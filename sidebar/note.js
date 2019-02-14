@@ -24,6 +24,16 @@ function updateContent() {
     });
 }
 
+function getSelectedText() {
+  var text = "";
+  if (window.getSelection) {
+    text = window.getSelection().toString();
+  } else if (document.selection && document.selection.type != "Control") {
+    text = document.selection.createRange().text;
+  }
+    return text;
+}
+
 browser.tabs.onActivated.addListener(updateContent);
 
 browser.tabs.onUpdated.addListener(updateContent);
