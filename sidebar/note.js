@@ -3,6 +3,7 @@ const contentBox = document.querySelector("#content");
 
 window.addEventListener("mouseover", () => {
   contentBox.setAttribute("contenteditable", true);
+  text = getSelectedText();
 });
 
 window.addEventListener("mouseout", () => {
@@ -22,6 +23,24 @@ function updateContent() {
     .then((storedInfo) => {
       contentBox.textContent = storedInfo[Object.keys(storedInfo)[0]];
     });
+}
+
+function getSelectedText() {
+  var text = "";
+  if (window.getSelection) {
+    text = window.getSelection().toString();
+  } else if (document.selection && document.selection.type != "Control") {
+    text = document.selection.createRange().text;
+  }
+    return text;
+}
+
+function clearSelection() {
+  if (getSelectedText()) {
+    window.getSelection().removeAllRanges();
+  } else if (document.selection) {
+    document.selection.empty();
+  }
 }
 
 browser.tabs.onActivated.addListener(updateContent);
