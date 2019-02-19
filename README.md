@@ -8,3 +8,12 @@ This extension adds a notepad to the sidebar. You can make notes about the curre
 3. Click `Load Temporary Add-on...`
 4. Select the `manifest.json` file for this extension
 5. Notepad will appear in your sidebar!
+
+## Contributing
+If you would like to contribute please follow the [contributing guidelines](https://github.com/nyu-ossd-s19/notepad-team-3/blob/master/CONTRIBUTING.md).
+
+## Code of Conduct
+Please follow the code of conduct outlined [here](https://github.com/nyu-ossd-s19/notepad-team-3/blob/master/CODE_OF_CONDUCT.md).
+
+## License
+This code is distributed under the [MIT License](https://github.com/nyu-ossd-s19/notepad-team-3/blob/master/LICENSE).
