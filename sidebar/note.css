@@ -24,6 +24,8 @@ p {
 
 #content[contenteditable=true] {
   background-color: #FFFCDB;
+  -moz-user-select: text;  /*Only works on Firefox*/
+  user-select: text;
 }
 
 [contenteditable]:focus {
