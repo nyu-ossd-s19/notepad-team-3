@@ -30,6 +30,17 @@ p {
   outline: 0px solid transparent;
 }
 
+/*
+.lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 495px;
+  margin-left: 5px;
+}
+*/
+
 /* styles for background-color picker */
 input{
   margin: .4rem;
@@ -45,14 +56,3 @@ input{
 #colorInput{
   font-weight:bold;
 }
-
-/*
-.lines {
-  border-left: 1px solid #ffaa9f;
-  border-right: 1px solid #ffaa9f;
-  width: 2px;
-  float: left;
-  height: 495px;
-  margin-left: 5px;
-}
-*/

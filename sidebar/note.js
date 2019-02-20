@@ -35,7 +35,6 @@ function updateContent() {
     .then((tabs) => {
       contentBox.style.backgroundColor = backgroundColor;
       document.body.style.backgroundColor = backgroundColor;
-      console.log(backgroundColor);
       return browser.storage.sync.get(tabs[0].url);
     })
     .then((storedInfo) => {
